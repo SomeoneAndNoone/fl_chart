@@ -351,7 +351,20 @@ class BarChartPainter extends AxisChartPainter<BarChartData> {
               final stackFromY = getPixelY(stackItem.fromY, drawSize, holder);
               final stackToY = getPixelY(stackItem.toY, drawSize, holder);
 
-              _barPaint.color = stackItem.color;
+              if (stackItem.colors.length == 1) {
+                _barPaint.color = stackItem.colors[0];
+                _barPaint.shader = null;
+              } else {
+                double center = (left + right) / 2;
+
+                _barPaint.shader = ui.Gradient.linear(
+                  Offset(center, stackFromY),
+                  Offset(center, stackToY),
+                  stackItem.colors,
+                  stackItem.colorStops,
+                );
+              }
+
               canvasWrapper.save();
               canvasWrapper
                   .clipRect(Rect.fromLTRB(left, stackToY, right, stackFromY));

@@ -172,28 +172,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             2,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 0 ? 2 : 0)),
                         BarChartRodStackItem(
                             2,
                             5,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 0 ? 2 : 0)),
                         BarChartRodStackItem(
                             5,
                             7.5,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 0 ? 2 : 0)),
                         BarChartRodStackItem(
                             7.5,
                             15.5,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 0 ? 2 : 0)),
@@ -215,28 +215,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             -1.8,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 1 ? 2 : 0)),
                         BarChartRodStackItem(
                             -1.8,
                             -4.5,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 1 ? 2 : 0)),
                         BarChartRodStackItem(
                             -4.5,
                             -7.5,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 1 ? 2 : 0)),
                         BarChartRodStackItem(
                             -7.5,
                             -14,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 1 ? 2 : 0)),
@@ -258,28 +258,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             1.5,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 2 ? 2 : 0)),
                         BarChartRodStackItem(
                             1.5,
                             3.5,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 2 ? 2 : 0)),
                         BarChartRodStackItem(
                             3.5,
                             7,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 2 ? 2 : 0)),
                         BarChartRodStackItem(
                             7,
                             13,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 2 ? 2 : 0)),
@@ -301,28 +301,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             1.5,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 3 ? 2 : 0)),
                         BarChartRodStackItem(
                             1.5,
                             3,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 3 ? 2 : 0)),
                         BarChartRodStackItem(
                             3,
                             7,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 3 ? 2 : 0)),
                         BarChartRodStackItem(
                             7,
                             13.5,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 3 ? 2 : 0)),
@@ -344,28 +344,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             -2,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 4 ? 2 : 0)),
                         BarChartRodStackItem(
                             -2,
                             -4,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 4 ? 2 : 0)),
                         BarChartRodStackItem(
                             -4,
                             -9,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 4 ? 2 : 0)),
                         BarChartRodStackItem(
                             -9,
                             -18,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 4 ? 2 : 0)),
@@ -387,28 +387,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             -1.2,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 5 ? 2 : 0)),
                         BarChartRodStackItem(
                             -1.2,
                             -2.7,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 5 ? 2 : 0)),
                         BarChartRodStackItem(
                             -2.7,
                             -7,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 5 ? 2 : 0)),
                         BarChartRodStackItem(
                             -7,
                             -17,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 5 ? 2 : 0)),
@@ -430,28 +430,28 @@ class BarChartSample5State extends State<BarChartSample5> {
                         BarChartRodStackItem(
                             0,
                             1.2,
-                            const Color(0xff2bdb90),
+                            [const Color(0xff2bdb90)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 6 ? 2 : 0)),
                         BarChartRodStackItem(
                             1.2,
                             6,
-                            const Color(0xffffdd80),
+                            [const Color(0xffffdd80)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 6 ? 2 : 0)),
                         BarChartRodStackItem(
                             6,
                             11,
-                            const Color(0xffff4d94),
+                            [const Color(0xffff4d94)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 6 ? 2 : 0)),
                         BarChartRodStackItem(
                             11,
                             17,
-                            const Color(0xff19bfff),
+                            [const Color(0xff19bfff)],
                             BorderSide(
                                 color: Colors.white,
                                 width: touchedIndex == 6 ? 2 : 0)),

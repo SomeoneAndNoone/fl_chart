@@ -1,12 +1,13 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:fl_chart/src/chart/bar_chart/bar_chart_painter.dart';
+import 'package:fl_chart/src/chart/base/base_chart/base_chart_painter.dart';
 import 'package:fl_chart/src/utils/canvas_wrapper.dart';
 import 'package:fl_chart/src/utils/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fl_chart/src/chart/base/base_chart/base_chart_painter.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
+
 import '../../helper_methods.dart';
 import '../data_pool.dart';
 import 'bar_chart_painter_test.mocks.dart';
@@ -1598,19 +1599,19 @@ void main() {
         BarChartRodStackItem(
           0,
           3,
-          const Color(0x11111110),
+          [const Color(0x11111110)],
           const BorderSide(color: Color(0x11111111), width: 1.0),
         ),
         BarChartRodStackItem(
           3,
           8,
-          const Color(0x22222220),
+          [const Color(0x22222220)],
           const BorderSide(color: Color(0x22222221), width: 2.0),
         ),
         BarChartRodStackItem(
           8,
           10,
-          const Color(0x33333330),
+          [const Color(0x33333330)],
           const BorderSide(color: Color(0x33333331), width: 3.0),
         ),
       ];
@@ -2033,7 +2034,7 @@ void main() {
                   colors: [const Color(0x00000000)],
                   borderRadius: const BorderRadius.all(Radius.circular(0.1)),
                   rodStackItems: [
-                    BarChartRodStackItem(0, 5, const Color(0xFF0F0F0F))
+                    BarChartRodStackItem(0, 5, [const Color(0xFF0F0F0F)])
                   ]),
             ],
             barsSpace: 5),

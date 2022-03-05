@@ -430,8 +430,13 @@ class BarChartRodStackItem with EquatableMixin {
   /// Renders a Stacked Chart section to [toY]
   final double toY;
 
-  /// Renders a Stacked Chart section with [color]
-  final Color color;
+  /// if you pass just one color, the solid color will be used,
+  /// or if you pass more than one color, we use gradient mode to draw stacked bar.
+  List<Color> colors;
+
+  /// if more than one color provided gradientColorStops will hold
+  /// stop points of the gradient.
+  final List<double>? colorStops;
 
   /// Renders border stroke for a Stacked Chart section
   final BorderSide borderSide;
@@ -449,15 +454,24 @@ class BarChartRodStackItem with EquatableMixin {
   ///   ]
   /// )
   /// ```
-  BarChartRodStackItem(this.fromY, this.toY, this.color,
-      [this.borderSide = Utils.defaultBorderSide]);
+  BarChartRodStackItem(this.fromY, this.toY, this.colors,
+      [this.borderSide = Utils.defaultBorderSide, this.colorStops])
+      : assert(colors.isNotEmpty);
 
   /// Copies current [BarChartRodStackItem] to a new [BarChartRodStackItem],
   /// and replaces provided values.
   BarChartRodStackItem copyWith(
-      {double? fromY, double? toY, Color? color, BorderSide? borderSide}) {
-    return BarChartRodStackItem(fromY ?? this.fromY, toY ?? this.toY,
-        color ?? this.color, borderSide ?? this.borderSide);
+      {double? fromY,
+      double? toY,
+      List<Color>? colors,
+      List<double>? colorStops,
+      BorderSide? borderSide}) {
+    return BarChartRodStackItem(
+        fromY ?? this.fromY,
+        toY ?? this.toY,
+        colors ?? this.colors,
+        borderSide ?? this.borderSide,
+        colorStops ?? this.colorStops);
   }
 
   /// Lerps a [BarChartRodStackItem] based on [t] value, check [Tween.lerp].
@@ -466,13 +480,14 @@ class BarChartRodStackItem with EquatableMixin {
     return BarChartRodStackItem(
         lerpDouble(a.fromY, b.fromY, t)!,
         lerpDouble(a.toY, b.toY, t)!,
-        Color.lerp(a.color, b.color, t)!,
-        BorderSide.lerp(a.borderSide, b.borderSide, t));
+        lerpColorList(a.colors, b.colors, t)!,
+        BorderSide.lerp(a.borderSide, b.borderSide, t),
+        lerpDoubleList(a.colorStops, b.colorStops, t));
   }
 
   /// Used for equality check, see [EquatableMixin].
   @override
-  List<Object?> get props => [fromY, toY, color, borderSide];
+  List<Object?> get props => [fromY, toY, colors, colorStops, borderSide];
 }
 
 /// Holds values to draw a rod in rear of the main rod.
